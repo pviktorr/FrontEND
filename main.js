@@ -10,7 +10,7 @@ let autoplayInterval = null
 
 async function chamarFotos() {
   try {
-    const response = await fetch('http://localhost:3000/fotos')
+    const response = await fetch('https://backend-xjps.onrender.com/fotos')
     const dados = await response.json()
     return dados || []
   } catch (error) {
